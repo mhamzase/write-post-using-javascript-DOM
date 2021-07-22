@@ -9,7 +9,7 @@ postbtn.addEventListener("click",()=>{
       let allposts = document.getElementsByClassName("allposts")[0];
       
 
-      if(username.value == "" || title.value == "" || desc.value == "")
+      if(username.value.trim() == "" || title.value.trim() == "" || desc.value.trim() == "")
       {
             message.innerText = "All fields Requried !!!";
             message.style.color = 'red';  
